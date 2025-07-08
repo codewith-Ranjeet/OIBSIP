@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manufacturing+Consent&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(images/nightsky.jpg);
+    background-size: cover;
+}
+
+/* NAVBAR */
+.navbar{
+    /* background: pink; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 4rem;
+}
+
+.logo{
+    color: #ff7200;
+    font-size: 2.5rem;
+    /* padding-bottom: 10px; */
+    font-family: manufacturing consent, sans-serif;
+    cursor: not-allowed;
+}
+
+.nav-elements ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    gap: 60PX;
+}
+
+.nav-elements ul li{
+    font-size: 1rem;
+    font-family: Kanit, sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+.nav-elements ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-elements ul li a:hover{
+    color: #ff7200;
+}
+.nav-elements ul li a::before{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    position: relative;
+    bottom: -25px;
+    margin: auto;
+    border-radius: 5px;
+    background: #ff7200;
+    transition: width .3s;
+}
+.nav-elements ul li a:hover::before{
+    width: 100%;
+}
+
+#search{
+    background: transparent;
+    color: white;
+    border: 2px solid #ff7200;
+    font-size: 15px;
+    border-radius: 8px 0 0 5px;
+    padding: 8px 20px;
+}
+#search-btn{
+    background-color: #ff7200;
+    color: white;
+    Font-size: 15px;
+    border: 2px solid #ff7200;
+    border-radius: 0 0 5px 0px;
+    padding: 8px 20px;
+}
+#search-btn:hover{
+    color: #000;
+    cursor: pointer;
+}
+
+/* MAIN SECTION */
+
+.main{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+}
+
+/* LEFT MAIN */
+.main h2{
+    color: white;
+    font-size: 3rem;
+    cursor: help;
+}
+
+.info-container{
+    /* background-color: yellow; */
+    color: white;
+}
+.info-container p{
+    font-family: kanit;
+    font-size: .9rem;
+    cursor: context-menu;
+}
+
+.info-container button{
+    background-color: #ff7200;
+    color: #000;
+    font-size: 1rem;
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    border: hidden;
+}
+
+.info-container button:hover{
+    cursor: pointer;
+    background-color: white;
+}
+
+/* RIGHT MAIN */
+.login-container{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 55vh;
+    width: 20vw;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: kanit;
+    color: white;
+}
+
+.login-container > div {
+    position: relative;
+    /* top: -100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    height: 45px;
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;   
+    color: #ff7200;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: context-menu;
+}
+
+.login-container form{
+    /* background-color: red; */
+    position: relative;
+    top: 0px;
+    height: 50%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container form input{
+    height: 40px;
+    width: 100%;
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-left: 10px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.login-container form input:focus{
+    outline: none;
+    border-bottom: 2px solid #ff7200;
+}
+
+.login-container form button{
+    background-color: #ff7200;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    width: 80%;
+    font-size: 1rem;
+}
+.login-container form button:hover{
+    cursor: pointer;
+    background-color: white;
+}
+
+.login-container p{
+    cursor: context-menu;
+}
+.login-container > p > a{
+    text-decoration: none;
+    color: #ff7200;
+}
+
+.login-container > p > a:hover{
+    text-shadow: 1px 1px 5px #ff7200;
+}

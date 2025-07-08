@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>CREATE ACCOUNT</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">ChaRge</div>
+            <div class="nav-elements">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="index.html">LOGIN</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="https://codewith-ranjeet.github.io/Portfolio/" target="_blank">ABOUT ME</a></li>
+                    <li><input type="search" placeholder="TYPE TO SEARCH"><button id="search">Search</button></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main>
+        <div class="signup-container" action="">
+            <div class="signup">SIGN-UP HERE</div>
+            <form onsubmit="return validatePassword()">
+                <input type="text" placeholder="Enter Full Name" id="fullName" required><br>
+                <input type="email" placeholder="Enter Email" id="signupEmail" required><br>
+                <input type="password" placeholder="Enter Password" id="signupPassword" required><br>
+                <input type="password" placeholder="Confirm Password" id="confirm-password" required><br>
+                <input type="submit">
+            </form>
+            <p>Aleary have an Account? <a href="index.html">LOGIN</a></p>
+        </div>
+
+        <div class="whyJoinUs-container">
+            <h2>WHY <span style="color: #ff7200;">JOIN</span> US ?</h2>
+            <p>Whether you're just starting out or ready to go pro,<br>we've got your back.</p>
+            <p>Learn at your pace, build projects, and grow with us.</p>
+            <button onclick="redirecttoportfolio()">CONTAC US</button>
+        </div>
+    </main>
+
+    <script src="signup.js">
+        
+    </script>
+</body>
+
+</html>

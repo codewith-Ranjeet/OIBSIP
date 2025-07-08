@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>LOGIN PAGE</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">ChaRge</div>
+            <div class="nav-elements">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="signup.html">SIGN UP</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="https://codewith-ranjeet.github.io/Portfolio/" target="_blank">ABOUT ME</a></li>
+
+                    <li><input type="search" id="search" placeholder="TYPE TO TEXT"><button
+                            id="search-btn">Search</button></li>
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="info-container">
+            <h2>Web Designer &</h2>
+            <h2 style="color: #ff7200; font-size: 4.5rem;">Developer</h2><br>
+            <p>Welcome!! Here, you can explore my work, learn about my skills, and get in touch with me.</p>
+            <p>I can build any functioning website you wish to make.</p>
+            <br>
+            <p>Feel free to contact me for any inquiries or collaborations.</p>
+            <br>
+            <div class="contact"><button id="contact" onclick="redirecttoportfolio()">CONTACT US</button></div>
+        </div>
+        <div class="login-container">
+            <div>Login Here</div>
+            <form onsubmit="return userLogin()">
+                <input type="email" name="email" id="loginEmail" placeholder="Enter Email" required><br>
+                <input type="password" name="password" id="loginPassword" placeholder="Enter Password" required><br>
+                <button type="submit">Login</button>
+            </form>
+            <p>Forgot password? <a href="reset-password.html">Reset Password</a></p>
+            <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+
+        </div>
+
+    </section>
+
+    <script src="login.js"></script>
+</body>
+
+</html>
