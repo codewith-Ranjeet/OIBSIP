@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-body" id="home">
+        <header>
+            <div class="navbar">
+                <div class="nav-logo"><span style="color: #ff0000;">R</span>anjeet</div>
+                <div class="nav-elements">
+                    <ul>
+
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about">ABOUT ME</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
+                        <li><a href="#contact">CONTACT ME</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN -->
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-content">
+                <p style="margin-bottom: 20px; background-color: #e6e6e6; display: inline;">Hi, I am</p>
+
+                <h1><span style="background-color: #e6e6e6;">Ranjeet</span> <span
+                        style="background-color: #000; color: #e6e6e6;">Shinde</span>
+                </h1>
+                <p style="color: gray;">Front-end Developer / UI Designer</p>
+                <div class="icon-container">
+                    <div class="icon"><a href="https://www.linkedin.com/in/ranjeet-shinde-287b0232a" target="_blank"><i
+                                class="fab fa-linkedin" style="color: #000;"></i></a></div>
+                    <div class="icon"><a href="https://github.com/codewith-Ranjeet" target="_blank"><i
+                                class="fab fa-github" style="color: #000;"></i></a>
+                    </div>
+                    <div class="icon"><a href="#" target="_blank"><i class="fab fa-instagram"
+                                style="color: #000;"></i></a></div>
+                </div>
+            </div>
+            <div class="hero-img">
+                <img src="heroimg.jpg" alt="Ranjeet's Image">
+            </div>
+        </section>
+    </div>
+
+
+    <!--  ABOUT  -->
+    <section id="about" class="section">
+        <h2 class="section-title">ABOUT ME</h2>
+        <p class="about-text">
+            I am a passionate Web Designer and Developer. <br>
+            I'm pursuing B.Tech in Computer Science. This is my personal peotfolio project tasked by <br>
+        <h4 style="color: #000; background-color: #fff; display: inline-block;">Oasis Infobyte</h4>.
+        </p>
+    </section>
+
+    <!--  SKILLS  -->
+    <section class="section" id="skills">
+        <h2 class="section-title">MY-SKILLS</h2>
+        <div class="skill-logo">
+            <img src="html.png" alt="HTML" />
+            <img src="css.png" alt="CSS" />
+            <img src="javascript.png" alt="JavaScript" />
+            <img src="c-logo.png" alt="C" />
+            <img src="java.png" alt="Java" />
+        </div>
+    </section>
+
+    <!--  PROJECTS  -->
+    <section class="section" id="projects">
+        <h2 class="section-title">PROJECTS</h2>
+        <div class="projects-container">
+            <div class="project" id="project1">
+                <div class="project-content">
+                    <h3>Login / Sign-up UI</h3>
+                    <p>login & sign-up authentication site built with HTML, CSS & Javascript.</p>
+                    <a class="project-btn" href="#">Code on GitHub ↗</a>
+                </div>
+            </div>
+            <div class="project" id="project2">
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>This very site - fully responsive, pure CSS animations & flexbox.</p>
+                    <a class="project-btn" href="#">Code on GitHub ↗</a>
+                </div>
+            </div>
+            <div class="project" id="project3">
+                <div class="project-content">
+                    <h3>Calculator</h3>
+                    <p> Simple Calculator with local-storage persistence.</p>
+                    <a class="project-btn" href="https://github.com/codewith-Ranjeet/OIBSIP/tree/0d8ad67cbc5609bcb9b41efe904ea56ac7c99ede/Calculator">Code on GitHub ↗</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  EDUCATION  -->
+    <section class="section" id="education">
+        <h2 class="section-title">EDUCATION</h2>
+        <div class="edu-container">
+            <div class="edu-item">
+                <h3>B.Tech in Computer Science</h3>
+                <p>GCOE College | 2024-Present</p>
+            </div>
+            <div class="edu-item">
+                <h3>Intermediate (12<sup>th</sup>)</h3>
+                <p>SM School | 2021-2022</p>
+            </div>
+            <div class="edu-item">
+                <h3>Matriculation (10<sup>th</sup>)</h3>
+                <p>SKN School | 2019-2020</p>
+            </div>
+        </div>
+    </section>
+
+    <!--  CONTACT  -->
+    <section class="section" id="contact">
+        <h2 class="section-title">CONTACT ME</h2>
+        <p class="contact-tag">Feel free to reach out for collaborations!</p>
+        <ul class="contact-links">
+            <li><a href="mailto:ranjeetshiinde2212@gmail.com"><i class="fas fa-envelope"></i>Email</a></li>
+            <li><a href="https://www.linkedin.com/in/ranjeet-shinde-287b0232a"><i
+                        class="fab fa-linkedin"></i>LinkedIn</a></li>
+            <li><a href="https://github.com/codewith-Ranjeet"><i class="fab fa-github"></i>GitHub</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+        </ul>
+    </section>
+
+    <!--  FOOTER  -->
+    <footer>
+        <p>© 2025 Ranjeet. All rights reserved.</p>
+    </footer>
+
+    <!--  JS Hamburger -->
+    <script>
+        const burger = document.createElement('div');
+        burger.className = 'hamburger';
+        burger.innerHTML = '<i class="fas fa-bars"></i>';
+        document.querySelector('.navbar').appendChild(burger);
+        burger.addEventListener('click', () => document.querySelector('.nav-elements').classList.toggle('active'));
+    </script>
+</body>
+
+</html>
