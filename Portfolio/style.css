@@ -231,19 +231,19 @@ header {
 }
 
 #project1 {
-    background: url(sp.png);
+    background: url(images/sp.png);
     background-size: cover;
     background-position: center;
 }
 
 #project2 {
-    background: url(pf.png);
+    background: url(images/pf.png);
     background-size: cover;
     background-position: center;
 }
 
 #project3 {
-    background: url(calculator.png);
+    background: url(images/calculator.png);
     background-size: cover;
     background-position: center;
 }
