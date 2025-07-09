@@ -128,9 +128,22 @@
         <h2 class="section-title">CONTACT ME</h2>
         <p class="contact-tag">Feel free to reach out for collaborations!</p>
         <ul class="contact-links">
-            <li><a href="mailto:ranjeetshinde2212@gmail.com"><i class="fas fa-envelope"></i>Email</a></li>
-            <li><a href="https://www.linkedin.com/in/shinde-ranjeet"><i
-                        class="fab fa-linkedin"></i>LinkedIn</a></li>
+            <!-- Email Form Popup -->
+            <div class="email-form-container" id="emailForm">
+                <div class="email-form">
+                    <span class="close-btn" onclick="closeForm()">x</span>
+                    <h3>Send me a message</h3>
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+
+            <li><a href="javascript:void(0);" onclick="openForm()"><i class="fas fa-envelope"></i> Mail me</a></li>
+            <li><a href="https://www.linkedin.com/in/shinde-ranjeet"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
             <li><a href="https://github.com/codewith-Ranjeet"><i class="fab fa-github"></i>GitHub</a></li>
             <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
         </ul>
@@ -141,13 +154,23 @@
         <p>© 2025 Ranjeet. All rights reserved.</p>
     </footer>
 
-    <!--  JS Hamburger -->
+
     <script>
+        // JS Hamburger
         const burger = document.createElement('div');
         burger.className = 'hamburger';
         burger.innerHTML = '<i class="fas fa-bars"></i>';
         document.querySelector('.navbar').appendChild(burger);
         burger.addEventListener('click', () => document.querySelector('.nav-elements').classList.toggle('active'));
+
+        // Email pop-up
+        function openForm() {
+            document.getElementById("emailForm").classList.add("active");
+        }
+
+        function closeForm() {
+            document.getElementById("emailForm").classList.remove("active");
+        }
     </script>
 </body>
 
