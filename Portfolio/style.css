@@ -412,7 +412,7 @@ footer {
         display: none;
         width: 100%;
         flex-direction: column;
-        background: transparent;
+        /* background: transparent; */
         margin-top: 10px;
     }
 
