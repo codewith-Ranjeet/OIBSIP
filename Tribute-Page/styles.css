@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    color: #333;
+    background: #fafafa;
+}
+
+/* Header */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    background: linear-gradient(to right, #d1e9ff, #fefefe);
+    padding: 2.8rem 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #0b3954;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+/* Hero Section */
+.hero {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero img {
+    max-width: 280px;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 2rem;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 1.3rem;
+    color: #444;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    line-height: 1.8;
+}
+
+/* Sections */
+section {
+    padding: 3rem 0;
+}
+
+h2 {
+    text-align: center;
+    color: #0b3954;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.legacy ul {
+    list-style: none;
+    max-width: 700px;
+    margin: auto;
+    padding-left: 0;
+}
+
+.legacy li {
+    background: #ffffff;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #d1e9ff;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+/* Responsive (made quote smaller and 2 lined for better ui) */
+@media (max-width: 600px) {
+
+    header{
+        padding: 2rem 0;
+    }
+
+    .quote {
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+}
